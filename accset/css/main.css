@@ -1,0 +1,606 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    height: auto;
+    width: 100%;
+    background-color: var(--white-color);
+    border-bottom: 1px solid #ccc;
+}
+.header__nav{
+display: flex;
+justify-content: space-between;
+}
+.header__nav-list{
+display: flex;
+list-style: none;
+}
+.header__navbar--items{
+    margin: 5px;
+    display: flex;
+    position: relative;
+
+}
+.header__navbar-links:hover{
+    background-color: rgb(230, 218, 218);
+    
+    
+}
+.header__navbar-links{
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 12px 15px;
+    border-radius: 3px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--black-color);
+    
+}
+
+/* header sneaker list */
+.header__narbar--sneaker-list{
+    position: absolute;
+    list-style: none;
+    top: 40px;
+    right: -215px;
+    background-color: var(--white-color);
+    width: 360px;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px #8d8080;
+display: none;
+z-index: 1;
+}
+
+.header__narbar--sneaker-items{
+    
+
+}
+.header__narbar--sneaker-links{
+font-size: 1.4rem;
+text-transform: initial;
+display: block;
+padding: 12px;
+cursor: pointer;
+text-decoration: none;
+color: var(--black-color);
+
+}
+.header__narbar--sneaker-links:hover{
+    background-color: rgb(230, 218, 218);
+}
+.header__navbar--items:hover .header__narbar--sneaker-list{
+    display: block;
+}
+/* clothing */
+.header__navbar--clothing-list{
+    position: absolute;
+    list-style: none;
+    top: 40px;
+    right: -259px;
+    background-color: var(--white-color);
+    width: 360px;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px #8d8080;
+    z-index: 1;
+    display: none;
+}
+.header__navbar--clothing-items{
+
+}
+.header__navbar--clothing-links{
+    font-size: 1.4rem;
+    text-transform: initial;
+    display: block;
+    padding: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--black-color);
+
+}
+.header__navbar--clothing-links:hover{
+    background-color: rgb(230, 218, 218);
+    
+}
+.header__navbar--items:hover .header__navbar--clothing-list{
+
+    display: block;
+}
+/*accessory  */
+.header__navbar--accessory-list{
+    position: absolute;
+    list-style: none;
+    top: 40px;
+    right: -259px;
+    background-color: var(--white-color);
+    width: 360px;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px #8d8080;
+    z-index: 1;
+    display: none;
+}
+.header__navbar--accessory-items{
+
+}
+.header__navbar--accessory-links{
+    font-size: 1.4rem;
+    text-transform: initial;
+    display: block;
+    padding: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--black-color);
+}
+.header__navbar--accessory-links:hover{
+    background-color: rgb(230, 218, 218);
+    
+}
+.header__navbar--items:hover .header__navbar--accessory-list{
+
+    display: block;
+}
+/* header search */
+.header__wiht-search{
+display: flex;
+align-items: center;
+width: 100%;
+justify-content: space-between;}
+.header__logo{
+
+}
+.header__logo-img{
+    width: 150px;
+}
+.header__search{
+height: 44px;
+display: flex;
+border: 1px solid rgb(161,165,164);
+border-radius: 3px;
+}
+.header__search-input{
+    height: 100%;
+    min-width: 600px;
+    border: none;
+    outline: none;
+    font-size: 1.7rem;
+    margin: 0 !important;
+}
+.header__search-icon{
+height: 44px;
+width: 44px;
+display: flex;
+cursor: pointer;
+}
+.header__search-icon:hover{
+
+    background-color: rgb(230, 218, 218, 0.5);
+}
+
+.header__search-icon i{
+margin: auto;
+font-size: 2.3rem;
+}
+.header__cart{
+    margin-right: 23px;
+
+}
+i.header__cart-icon{
+font-size: 3.4rem;
+
+}
+.slider__header{
+    height: 40px;
+    width: 100%;
+    background-color: rgba(0, 0, 0,0.8);
+    display: flex;
+}
+.slider__list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: auto;
+}
+.slider__items{
+    margin: 0 20px;
+}
+.slider__items-links{
+font-size: 1.5rem;
+text-decoration: none;
+color: var(--white-color);
+text-transform: uppercase;
+
+
+}
+.slider__items-links:hover{
+    opacity: 0.5;
+}
+.slider__items-links-active{
+    color: red;
+    position: relative;
+
+}
+.slider__items-sale{
+    position: absolute;
+    color: red;
+    font-weight: 700;
+    border-radius: 50%;
+    top: 0;
+    right:-30px;
+    font-size: 0.9rem;
+    transform: rotate(39deg);
+}
+/* slider css */
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+/* content css */
+.content{
+}
+.content__header{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+
+}
+.content__heading{
+font-size: 1.6rem;
+}
+.content__heading > i{
+    color: rgb(231, 7, 7);
+
+}
+.content__heading-more-btn{
+border: none;
+outline: none;
+color: var(--black-color);
+text-transform: uppercase;
+background-color: var(--white-color);
+cursor: pointer;
+font-weight: 600;
+}
+/* home product items */
+.home__product{
+    scroll-margin-top: 70px ;
+
+}
+.home__product-items{
+    text-decoration: none;
+    display: block;
+    border: 1px solid #EDEDED;
+    overflow: hidden;
+  text-overflow: clip;
+  width: 191px;
+  min-height: 220px;
+  margin-top: 30px;
+}
+.home__product-img{
+    padding: 10px;
+display: flex;
+}
+.home__product-img > img {
+    margin: auto;
+}
+.home__product-body{
+padding: 8px;
+text-align: left;}
+.home__product-heading{
+color: var(--black-color);
+font-size: 1.4rem;
+line-height: 2rem;
+display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.home__product-price-ogrin{
+}
+.home__product-request{
+    color: #5f5f5f ;
+    line-height: 1.6rem;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 1.2rem;
+
+}
+.home__product-request > i{
+    color: rgb(231, 7, 7);
+    margin-left: 5px;
+    font-size: 1.6rem;
+}
+.home__product-price{
+font-size: 2.1rem;
+font-weight: 800;
+color: #0f0f0f;
+margin-top: 10px;
+}
+.home__product-sold-out{
+    font-display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+}
+.home__product-sold{
+margin-top: 8px;
+background-color: #f4f3f1;
+height: 22px;
+width: 64px;
+text-align: center;
+border-radius: 3px;
+font-size: 1.2rem;
+color: var(--black-color);
+}
+/* homeproduct brand */
+.home__product-brand{
+margin-top: 30px;
+}
+.home__product-brand-items img{
+    width: 231px;
+}
+.home__product-brand-items {
+    display: block;
+}
+/* homeproduct image advertising */
+.home__product-image-advertising{
+    display: flex;
+    margin-top: 30px;
+}
+.home__product-image-advertising--L {
+width: 64%;
+}
+.home__product-image-advertising--R {
+width: 34%;
+margin-left: 23px;
+
+}
+.home__product-image-advertising--L img ,.home__product-image-advertising--R img{
+    width: 100%;
+    height: 100%;
+}
+/* clothing hot trend */
+.home__product-sale{
+    margin-top: 15px;
+    display: flex;
+    background-color: #f4f3f1;
+    min-width: auto;
+    border-radius: 3px;
+    line-height: 1.9rem;
+    align-items: center;
+}
+
+.home__product-last-sale{
+    font-size: 1.3rem;
+    color: var(--black-color);
+    font-weight: 500;
+}
+.home__product-price-last-sale{
+    font-size: 1.3rem;
+    color: rgb(231,7,7);
+}
+/* footer */
+.footer{
+    background-color: #242424;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+.footer__heading{
+    color: var(--white-color);
+    font-size: 2rem;
+    padding-top: 32px;
+    margin-bottom: 27px;
+    font-weight: 600;
+}
+.footer__lists{
+    list-style: none;
+}
+.footer__items{
+margin-bottom: 8px;
+display: block;
+
+}
+.footer__items:hover{
+opacity: 0.6;}
+.footer__items a:hover {
+    border-bottom: 1px solid var(--white-color);
+
+}
+.footer__heading-name{
+color: var(--white-color);
+font-size: 1.6rem;
+cursor: pointer;
+}
+.footer__items-links{
+color: var(--white-color);
+text-decoration: none;
+font-size: 1.1rem;
+}
+.footer hr {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.footer__btn{
+    padding: 12px;
+    background-color: transparent;
+    color: var(--white-color);
+    border-color: var(--white-color);
+}
+.footer__bottom-heading{
+font-size: 1.4rem;
+color: var(--white-color);
+}
+.footer__social-network-list{
+list-style: none;
+display: flex;
+}
+.footer__social-network-items a{
+padding-left: 10px;
+padding-right: 10px;
+font-size: 1.3rem;
+color: var(--white-color);
+}
+.footer__social-network-items{
+    margin-top: 10px;
+}
+.footer__app{
+    display: flex;
+}
+.footer__app-list{
+    list-style: none;
+    padding: 0 10px;
+    margin-top: 10px;
+
+}
+.footer__app-list a{
+font-size: 1.5rem;
+color: var(--white-color);
+}
+.footer__app-list:hover a {
+    opacity: 0.5;
+}
+/*  */
+
+
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.modal__login{
+    visibility: hidden;
+}
+.modal__login:target{
+    visibility: visible;
+}
+.modal__rigsiter{
+    visibility: hidden;
+}
+.modal__rigsiter:target{
+    visibility: visible;
+}
+.container {
+  padding: 16px;
+  width: 500px;
+  position: relative;
+}
+.container__drs {
+    margin-top: 10px;
+    font-size: 1.8rem;
+    text-align: right;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+.modal__close{
+    display: block;
+    float: right;
+    position: absolute;
+    top: 4px;
+    font-size: 3rem;
+    text-decoration: none;
+    color: var(--black-color);
+    right: 5px;
+}
